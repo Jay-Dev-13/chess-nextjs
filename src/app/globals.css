@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.cell-after {
+  position: relative;
+}
+
+.cell-after::after {
+  content: attr(data-content);
+  position: absolute;
+  top: 5px;
+  right: 0;
+  margin-right: 50%;
+  color: white;
+  font-size: 1rem;
+}
